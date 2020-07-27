@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_user_face"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/border_radius_rectangle_noface" />
+
+    <RelativeLayout
+        android:id="@+id/rv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_user_face"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/a_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帳號：" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_1"
+            android:hint="顯示帳號" />
+
+        <TextView
+            android:id="@+id/a_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_1"
+            android:layout_marginTop="10dp"
+            android:text="姓名：" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/a_2"
+            android:hint="顯示姓名" />
+
+        <TextView
+            android:id="@+id/a_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_2"
+            android:layout_marginTop="10dp"
+            android:text="性別：" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/a_3"
+            android:hint="顯示性別" />
+
+        <TextView
+            android:id="@+id/a_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_2"
+            android:layout_toRightOf="@+id/tv_gender"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="職業：" />
+
+        <TextView
+            android:id="@+id/tv_career"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/a_4"
+            android:hint="顯示職業" />
+
+    </RelativeLayout>
+
+    <!--其他功能-->
+
+    <TextView
+        android:id="@+id/btn_use_skill"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rv_1"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/btn_add_career"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border_radius_rectangle_noface"
+        android:gravity="center"
+        android:text="使用技能" />
+
+    <TextView
+        android:id="@+id/btn_add_career"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rv_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border_radius_rectangle_noface"
+        android:gravity="center"
+        android:text="職業轉換" />
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#282828">
+
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/btn_add_role"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="#5555"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="onClick"
+            android:text="＜　 ＜ 創 建 新 角 色 ＞ 　＞"/>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RLView_Sample"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@color/white"
+        android:scrollbarSize="30dp"
+    />
+    <!--app:fastScrollEnabled="true"-->
+    <!--app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"-->
+    <!--app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"-->
+    <!--app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"-->
+    <!--app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"-->
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_user_face"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/border_radius_rectangle_noface" />
+
+    <RelativeLayout
+        android:id="@+id/rv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/a_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帳號：" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_1"
+            android:hint="顯示帳號" />
+
+        <TextView
+            android:id="@+id/a_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_id"
+            android:layout_marginLeft="20dp"
+            android:text="姓名：" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/a_2"
+            android:hint="顯示姓名" />
+
+        <TextView
+            android:id="@+id/a_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_2"
+            android:layout_marginTop="10dp"
+            android:text="性別：" />
+        <!--android:layout_below="@+id/a_2"-->
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/a_3"
+            android:hint="顯示性別" />
+
+        <TextView
+            android:id="@+id/a_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_2"
+            android:layout_toRightOf="@+id/tv_gender"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="職業：" />
+
+        <TextView
+            android:id="@+id/tv_career"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/a_4"
+            android:hint="顯示職業" />
+
+    </RelativeLayout>
+
+    <!--其他功能-->
+
+    <RelativeLayout
+        android:id="@+id/rv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rv_1"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:id="@+id/tv_set_Fighter"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_radius_rectangle_noface"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="勇者 \n ( Fighter )" />
+
+        <TextView
+            android:id="@+id/tv_set_Mage"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_set_Fighter"
+            android:background="@drawable/border_radius_rectangle_noface"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="法師 \n ( Mage )" />
+
+        <TextView
+            android:id="@+id/tv_set_Archer"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_set_Mage"
+            android:background="@drawable/border_radius_rectangle_noface"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="弓箭手 \n ( Archer )" />
+
+        <TextView
+            android:id="@+id/tv_set_Paladin"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_set_Fighter"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_radius_rectangle_noface"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="騎士 \n ( Paladin )" />
+
+        <TextView
+            android:id="@+id/tv_set_Warrior"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_set_Fighter"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_set_Paladin"
+            android:background="@drawable/border_radius_rectangle_noface"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="狂戰士 \n ( Warrior )" />
+
+        <TextView
+            android:id="@+id/tv_set_Assassin"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_set_Fighter"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_set_Warrior"
+            android:background="@drawable/border_radius_rectangle_noface"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="刺客 \n ( Assas )" />
+
+        <TextView
+            android:id="@+id/tv_set_Specialist"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_set_Warrior"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/tv_set_Paladin"
+            android:background="@drawable/border_radius_rectangle_noface"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="技師 \n ( Speci )" />
+
+        <!--//     “@00_Newcomer初心者”-->
+        <!--//     “@01_Fighter勇者” “@02_Mage法師”“@03_Archer弓箭手”-->
+        <!--//     “@04_Paladin騎士” “@05_Warrior狂戰士”““@06_Assassin刺客”-->
+        <!--//        @07_Specialist技師”-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
